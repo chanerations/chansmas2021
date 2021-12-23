@@ -51,7 +51,7 @@ body {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 /*    animation-name: fade; */
-    animation-duration: 125s; /* 25 images @5s = 125*/
+    animation-duration: 100s; /* 25 images @4s = 100*/
 }
 
 #card img:nth-child(1) { /* background stays */
@@ -64,95 +64,95 @@ body {
 }
 #card img:nth-child(3) {
     animation-name: fade;
-    animation-delay: 10s;
+    animation-delay: 8s;
 }
 #card img:nth-child(4) {
     animation-name: fade;
-    animation-delay: 15s;
+    animation-delay: 12s;
 }
 #card img:nth-child(5) {
     animation-name: fade;
-    animation-delay: 20s;
+    animation-delay: 16s;
 }
 #card img:nth-child(6) {
     animation-name: fade;
-    animation-delay: 25s;
+    animation-delay: 20s;
 }
 #card img:nth-child(7) {
     animation-name: fade;
-    animation-delay: 30s;
+    animation-delay: 24s;
 }
 #card img:nth-child(8) {
     animation-name: fade;
-    animation-delay: 35s;
+    animation-delay: 28s;
 }
 #card img:nth-child(9) {
     animation-name: fade;
-    animation-delay: 40s;
+    animation-delay: 32s;
 }
 #card img:nth-child(10) {
     animation-name: fade;
-    animation-delay: 45s;
+    animation-delay: 36s;
 }
 #card img:nth-child(11) {
     animation-name: fade;
-    animation-delay: 50s;
+    animation-delay: 40s;
 }
 #card img:nth-child(12) {
     animation-name: fade;
-    animation-delay: 55s;
+    animation-delay: 44s;
 }
 #card img:nth-child(13) {
     animation-name: fade;
-    animation-delay: 60s;
+    animation-delay: 48s;
 }
 #card img:nth-child(14) {
     animation-name: fade;
-    animation-delay: 65s;
+    animation-delay: 52s;
 }
 #card img:nth-child(15) {
     animation-name: fade;
-    animation-delay: 70s;
+    animation-delay: 56s;
 }
 #card img:nth-child(16) {
     animation-name: fade;
-    animation-delay: 75s;
+    animation-delay: 60s;
 }
 #card img:nth-child(17) {
     animation-name: fade;
-    animation-delay: 80s;
+    animation-delay: 64s;
 }
 #card img:nth-child(18) {
     animation-name: fade;
-    animation-delay: 85s;
+    animation-delay: 68s;
 }
 #card img:nth-child(19) {
     animation-name: fade;
-    animation-delay: 90s;
+    animation-delay: 72s;
 }
 #card img:nth-child(20) {
     animation-name: fade;
-    animation-delay: 95s;
+    animation-delay: 76s;
 }
 #card img:nth-child(21) {
     animation-name: fade;
-    animation-delay: 100s;
+    animation-delay: 80s;
 }
 #card img:nth-child(22) {
     animation-name: fade;
-    animation-delay: 105s;
+    animation-delay: 84s;
 }
 #card img:nth-child(23) {
     animation-name: fade;
-    animation-delay: 110s;
+    animation-delay: 88s;
 }
 #card img:nth-child(24) {
     animation-name: fade;
-    animation-delay: 115s;
+    animation-delay: 92s;
 }
 #card img:nth-child(25) { /* greeting stays */
     animation-name: fade-stay;
-    animation-delay: 120s;
+    animation-delay: 96s;
 }
 
 /* calculations:
@@ -163,80 +163,80 @@ e.g. 1 sec fade-in, 2 sec visible with 3 images => animation-duration=3x3=9
 1st image delay=0s, 2nd image delay=3s, 3rd image delay=6s
 keyframes: 1 second=100/9=11.11% => at 11.11% opacity:1, at 33.33% opacity: 1, at 44:44% & 100% opacity: 0 
 */
-/* 100/125s=.8% each second */
+/* 100/100s=1% each second */
 @keyframes fade {
     0%   { opacity: 0; }
-    1.6%   { opacity: 1; } /* 2 seconds */
-    8%  { opacity: 1; } /* 10 seconds */
-    32%  { opacity: 0; } /* 40 seconds */
+    2%   { opacity: 1; } /* 2 seconds */
+    10%  { opacity: 1; } /* 10 seconds */
+    40%  { opacity: 0; } /* 40 seconds */
     100% { opacity: 0; }
 }
 @-webkit-keyframes fade {
     0%   { opacity: 0; }
-    1.6%   { opacity: 1; } /* 2 seconds */
-    8%  { opacity: 1; } /* 10 seconds */
-    32%  { opacity: 0; } /* 40 seconds */
+    2%   { opacity: 1; } /* 2 seconds */
+    10%  { opacity: 1; } /* 10 seconds */
+    40%  { opacity: 0; } /* 40 seconds */
     100% { opacity: 0; }
 }
 @-moz-keyframes fade {
     0%   { opacity: 0; }
-    1.6%   { opacity: 1; } /* 2 seconds */
-    8%  { opacity: 1; } /* 10 seconds */
-    32%  { opacity: 0; } /* 40 seconds */
+    2%   { opacity: 1; } /* 2 seconds */
+    10%  { opacity: 1; } /* 10 seconds */
+    40%  { opacity: 0; } /* 40 seconds */
     100% { opacity: 0; }
 }
 @-o-keyframes fade {
     0%   { opacity: 0; }
-    1.6%   { opacity: 1; } /* 2 seconds */
-    8%  { opacity: 1; } /* 10 seconds */
-    32%  { opacity: 0; } /* 40 seconds */
+    2%   { opacity: 1; } /* 2 seconds */
+    10%  { opacity: 1; } /* 10 seconds */
+    40%  { opacity: 0; } /* 40 seconds */
     100% { opacity: 0; }
 }
 @keyframes fade-stay {
     0%   { opacity: 0; }
-    2.4%   { opacity: 1; } /* 3 seconds */
+    3%   { opacity: 1; } /* 3 seconds */
     100% { opacity: 1; }
 }
 @-webkit-keyframes fade-stay {
     0%   { opacity: 0; }
-    2.4%   { opacity: 1; }
+    3%   { opacity: 1; } /* 3 seconds */
     100% { opacity: 1; }
 }
 @-moz-keyframes fade-stay {
     0%   { opacity: 0; }
-    2.4%   { opacity: 1; }
+    3%   { opacity: 1; } /* 3 seconds */
     100% { opacity: 1; }
 }
 @-o-keyframes fade-stay {
     0%   { opacity: 0; }
-    2.4%   { opacity: 1; }
+    3%   { opacity: 1; } /* 3 seconds */
     100% { opacity: 1; }
 }
 @keyframes fast-fade {
     0%   { opacity: 0; }
-    .8%   { opacity: 1; } /* 1 seconds */
-    3.2%  { opacity: 1; } /* 4 seconds */
-    6.4%  { opacity: 0; } /* 8 seconds */
+    1%   { opacity: 1; } /* 1 seconds */
+    4%  { opacity: 1; } /* 4 seconds */
+    8%  { opacity: 0; } /* 8 seconds */
     100% { opacity: 0; }
 }
 @-webkit-keyframes fast-fade {
     0%   { opacity: 0; }
-    .8%   { opacity: 1; } /* 1 seconds */
-    3.2%  { opacity: 1; } /* 4 seconds */
-    6.4%  { opacity: 0; } /* 8 seconds */
+    1%   { opacity: 1; } /* 1 seconds */
+    4%  { opacity: 1; } /* 4 seconds */
+    8%  { opacity: 0; } /* 8 seconds */
     100% { opacity: 0; }
 }
 @-moz-keyframes fast-fade {
     0%   { opacity: 0; }
-    .8%   { opacity: 1; } /* 1 seconds */
-    3.2%  { opacity: 1; } /* 4 seconds */
-    6.4%  { opacity: 0; } /* 8 seconds */
+    1%   { opacity: 1; } /* 1 seconds */
+    4%  { opacity: 1; } /* 4 seconds */
+    8%  { opacity: 0; } /* 8 seconds */
     100% { opacity: 0; }
 }
 @-o-keyframes fast-fade {
     0%   { opacity: 0; }
-    .8%   { opacity: 1; } /* 1 seconds */
-    3.2%  { opacity: 1; } /* 4 seconds */
-    6.4%  { opacity: 0; } /* 8 seconds */
+    1%   { opacity: 1; } /* 1 seconds */
+    4%  { opacity: 1; } /* 4 seconds */
+    8%  { opacity: 0; } /* 8 seconds */
     100% { opacity: 0; }
 }
